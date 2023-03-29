@@ -63,6 +63,7 @@
             <CheckMenuItem fx:id="ch5" mnemonicParsing="false" text="Milk" />
             <CheckMenuItem fx:id="ch6" mnemonicParsing="false" text="Wheat" />
             <CheckMenuItem fx:id="ch7" mnemonicParsing="false" text="Corn" />
+            <CheckMenuItem fx:id="ch8" mnemonicParsing="false" text="Shellfish" />
          </items>
       </MenuButton>
    </children>

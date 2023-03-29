@@ -26,13 +26,13 @@
       <MenuButton fx:id="Menu" mnemonicParsing="false" prefHeight="58.0" prefWidth="147.0">
         <items>
             <MenuItem mnemonicParsing="false" onAction="#OnButtonClicked4" text="Settings" />
+            <MenuItem mnemonicParsing="false" onAction="#OnButtonClicked2" text="LogOut" />
+            <MenuItem mnemonicParsing="false" onAction="#OnButtonClicked3" text="Exit" />
         </items>
          <font>
             <Font size="18.0" />
          </font>
       </MenuButton>
-      <Button layoutX="902.0" mnemonicParsing="false" onAction="#OnButtonClicked3" prefHeight="25.0" prefWidth="136.0" text="Exit" />
-      <Button layoutX="766.0" mnemonicParsing="false" onAction="#OnButtonClicked2" prefHeight="25.0" prefWidth="136.0" text="LogOut" />
       <TextArea fx:id="txt" layoutX="697.0" layoutY="476.0" prefHeight="174.0" prefWidth="307.0" />
       <Label fx:id="label" layoutX="818.0" layoutY="439.0" text="AdminReply" />
       <TextArea fx:id="txt1" layoutX="697.0" layoutY="185.0" prefHeight="200.0" prefWidth="307.0" />

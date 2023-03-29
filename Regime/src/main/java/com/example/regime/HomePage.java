@@ -37,7 +37,7 @@ public class HomePage {
 
     public void OnButtonClicked(ActionEvent event) throws IOException, SQLException {
         Connect();
-        stmt.executeUpdate("insert into feedback (feedback) values ('"+txt1.getText()+"')");
+        stmt.executeUpdate("insert into feedback (feedback,customerf2_id) values ('"+txt1.getText()+"','"+User.id+"')");
     }
 
     public void OnButtonClicked4(ActionEvent event) throws IOException {
