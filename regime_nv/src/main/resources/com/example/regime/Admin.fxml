@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="696.0" prefWidth="908.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.regime.Admin">
+   <children>
+      <Label layoutX="83.0" layoutY="134.0" prefHeight="28.0" prefWidth="148.0" text="FoodInsert" />
+      <Label layoutX="539.0" layoutY="140.0" prefHeight="17.0" prefWidth="85.0" text="Feedback by:" />
+      <MenuButton mnemonicParsing="false" prefHeight="58.0" prefWidth="147.0" text="Admin">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#OnButtonClicked2" text="LogOut" />
+            <MenuItem mnemonicParsing="false" onAction="#OnButtonClicked3" text="Exit" />
+         </items>
+      </MenuButton>
+      <Button layoutX="83.0" layoutY="453.0" mnemonicParsing="false" onAction="#OnButtonClicked" prefHeight="25.0" prefWidth="85.0" text="Insert" />
+      <TextField fx:id="text1" layoutX="51.0" layoutY="212.0" />
+      <TextField fx:id="text2" layoutX="51.0" layoutY="253.0" />
+      <TextField fx:id="text3" layoutX="51.0" layoutY="299.0" />
+      <TextField fx:id="text4" layoutX="51.0" layoutY="348.0" />
+      <TextField fx:id="text5" layoutX="51.0" layoutY="393.0" />
+      <TextArea fx:id="txt" layoutX="539.0" layoutY="178.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextArea fx:id="adtxt" layoutX="539.0" layoutY="393.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="654.0" layoutY="621.0" mnemonicParsing="false" onAction="#OnButtonClicked4" prefHeight="25.0" prefWidth="85.0" text="Reply" />
+      <Button layoutX="539.0" layoutY="621.0" mnemonicParsing="false" onAction="#OnButtonClicked3" prefHeight="25.0" prefWidth="85.0" text="Delete" />
+      <Label fx:id="label" layoutX="625.0" layoutY="140.0" prefHeight="17.0" prefWidth="115.0" />
+      <Button layoutX="762.0" layoutY="175.0" mnemonicParsing="false" onAction="#OnButtonClicked6" prefHeight="25.0" prefWidth="85.0" text="Next" />
+      <MenuButton fx:id="MenuButton" layoutX="249.0" layoutY="212.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="212.0" text="Allergii">
+         <items>
+            <CheckMenuItem fx:id="ch1" mnemonicParsing="false" text="Fish" />
+            <CheckMenuItem fx:id="ch2" mnemonicParsing="false" text="Peanuts" />
+            <CheckMenuItem fx:id="ch3" mnemonicParsing="false" text="Treenuts" />
+            <CheckMenuItem fx:id="ch4" mnemonicParsing="false" text="Eggs" />
+            <CheckMenuItem fx:id="ch5" mnemonicParsing="false" text="Milk" />
+            <CheckMenuItem fx:id="ch6" mnemonicParsing="false" text="Wheat" />
+            <CheckMenuItem fx:id="ch7" mnemonicParsing="false" text="Corn" />
+            <CheckMenuItem fx:id="ch8" mnemonicParsing="false" text="Shellfish" />
+            <CheckMenuItem fx:id="vegan" mnemonicParsing="false" text="Vegan" />
+         </items>
+      </MenuButton>
+   </children>
+</AnchorPane>
