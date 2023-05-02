@@ -3,6 +3,8 @@ package com.example.regime;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.stage.Popup;
+
 import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
@@ -54,7 +56,7 @@ public class SignUp {
     @FXML
     private CheckBox checkbox;
     @FXML
-    void OnButtonClicked3(ActionEvent e) throws SQLException {
+    void OnButtonClicked3(ActionEvent e) throws SQLException, IOException {
         RadioButton rb = (RadioButton) (Group.getSelectedToggle());
         RadioButton rb2 = (RadioButton) (Group2.getSelectedToggle());
         String activity = rb2.getText();
@@ -68,6 +70,18 @@ public class SignUp {
                 Arrays.asList(ch1.isSelected(), ch2.isSelected(), ch3.isSelected(), ch4.isSelected(),
                         ch5.isSelected(), ch6.isSelected(), ch8.isSelected(), ch8.isSelected(), checkbox.isSelected()));
         ModelSignUp.createProfile(activity,gender,username,password,age,height,weight, allergies);
+        // create a label
+        Label label = new Label("Akaunta e suzdadedn uspeshno!s");
+
+        // create a popup
+        Popup popup = new Popup();
+
+        // set background
+        label.setStyle(" -fx-background-color: white;");
+        popup.getContent().add(label);
+
+
+
     }
     public void OnButtonClicked(ActionEvent event) throws IOException {
         SceneChanger.set("SignIn");

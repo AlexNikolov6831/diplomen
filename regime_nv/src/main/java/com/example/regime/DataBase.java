@@ -9,7 +9,7 @@ public class DataBase {
     public static Statement stmt;
     public static ResultSet rs;
     public static void Connect() throws SQLException {
-        con = DriverManager.getConnection("jdbc:mysql://localhost:3306/rejim", "root", "root");
+        con = DriverManager.getConnection("jdbc:mysql://localhost:3306/rejim", "root", "1234");
 
         stmt = con.createStatement();
     }
